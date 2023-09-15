@@ -8,53 +8,53 @@ function dna_writer(f) {
 	//letters
 	this.char = new Object;
 
-	this.char.start = "ATG";
+	this.char.start = "TTG";
 	this.char.stop = "TAA";
 
-	this.char.A = "GCT";
-	this.char.B = "AAC";
-	this.char.C = "TGT";
-	this.char.D = "GAT";
+	this.char["Α"] = "ACT";
+	this.char.["Β"] = "CAT";
+	this.char.["Γ"] = "TCA";
+	this.char.["Δ"] = "TAC";
 
-	this.char.E = "GAA";
-	this.char.F = "TTT";
-	this.char.G = "GGT";
-	this.char.H = "CAT";
+	this.char.["Ε"] = "CTA";
+	this.char.["Ζ"] = "GCT";
+	this.char.["Η"] = "GTC";
+	this.char.["Θ"] = "CGT";
 
-	this.char.I = "ATT";
-	this.char.J = "TTG";
-	this.char.K = "AAA";
-	this.char.L = "CTT";
+	this.char.["Ι"] = "CTG";
+	this.char.["Κ"] = "TGC";
+	this.char.["Λ"] = "TCG";
+	this.char.["Μ"] = "ATC";
 
-	this.char.M = "ATG";
-	this.char.N = "AAT";
-	this.char.O = "AGG";
-	this.char.P = "CCT";
+	this.char.["Ν"] = "ACA";
+	this.char.["Ξ"] = "CTC";
+	this.char.["Ο"] = "TGT";
+	this.char.["Π"] = "GAG";
 
-	this.char.Q = "CAA";
-	this.char.R = "CGT";
-	this.char.S = "TCT";
-	this.char.T = "ACT";
+	this.char.["Ρ"] = "TAT";
+	this.char.["Σ"] = "CAC";
+	this.char.["Τ"] = "TGA";
+	this.char.["Υ"] = "GAT";
 
-	this.char.U = "AGA";
-	this.char.V = "GTT";
-	this.char.W = "TGG";
-	this.char.X = "AGC";
+	this.char.["Φ"] = "GTA";
+	this.char.["Χ"]= "ATG";
+	this.char.["Ψ"]= "AGT";
+	this.char.["Ω"] = "GAC";
 
-	this.char.Y = "TAT";
-	this.char.Z = "CAA";
+	this.char.["SPACE"] = "GCA";
+	this.char.[","] = "ACG";
 
-	this.char["0"] = "AGT";
-	this.char["1"] = "GCG";
-	this.char["2"] = "GGG";
-	this.char["3"] = "CTG";
-	this.char["4"] = "CCG";
+	this.char["0"] = "ATA";
+	this.char["1"] = "TCT";
+	this.char["2"] = "GCG";
+	this.char["3"] = "GTG";
+	this.char["4"] = "AGA";
 
-	this.char["5"] = "CGG";
-	this.char["6"] = "TCG";
-	this.char["7"] = "ACG";
-	this.char["8"] = "GTG";
-	this.char["9"] = "GAG";
+	this.char["5"] = "CGC";
+	this.char["6"] = "ATT";
+	this.char["7"] = "ACC";
+	this.char["8"] = "AGG";
+	this.char["9"] = "CAA";
 
 	this.char[" "] = "GCA";
 	this.char["."] = "GGA";
@@ -429,3 +429,4 @@ dna_writer.prototype.get_random_letters = function() {
 
     return text;
 }
+
